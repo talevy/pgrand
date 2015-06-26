@@ -1,0 +1,16 @@
+[package]
+name = "pgrand"
+version = "0.1.0"
+authors = ["Tal Levy <jubboy333@gmail.com>"]
+
+[[bin]]
+name = "pgrand"
+path = "src/main.rs"
+
+[dependencies]
+chrono = "*"
+rand = "*"
+postgres = { version = "*", features = ["chrono"] }
+docopt = "*"
+rustc-serialize = "*"
+time = "*"
